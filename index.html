@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <main class="panel">
+            <section class="input">
+                <input type="text" id="diceInput" placeholder="1d12+2">
+                <fieldset>
+                    <legend>Modifiers</legend>
+                    <label for="none"><input type="radio" name="modifiers" id="none"> None</label>
+                    <label for="advantage"><input type="radio" name="modifiers" id="advantage"> Advantage</label>
+                    <label for="disadvantage"><input type="radio" name="modifiers" id="disadvantage"> Disadvantage</label>
+                </fieldset>
+                <button id="rollButton">Roll!</button>
+            </section>
+            <section class="output">
+                <h3 id="result">17</h3>
+            </section>
+        </main>
+    </div>
 
     <script src="main.js"></script>
 </body>
