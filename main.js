@@ -62,6 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
             total += parseInt(modifier);
         }
 
-        resultOutput.textContent = total;
+        resultOutput.textContent = total >= 1 ? total : 1;
     });
 });
